@@ -1,0 +1,15 @@
+                                  
+                ___ ___ ___       
+ ___ ___ ___   |_  |  _|   |___   
+| -_|  _| -_|  |  _| . | | |  _|_ 
+|___|___|___|  |___|___|___|___|_|
+                                  
+
+ECE 260C Image I: EDA Essentials
+        Includes OpenROAD, Yosys, KLayout, Git, and GitHub CLI. GUI Supported.
+
+Components Copyright (c) 2025 The Regents of the University of California
+
+A copy of OpenROAD Flow Scripts is provided in this container as a faster alternative to git clone.
+You can copy it in using the orfs_copy or orfs_copy [dest] command.
+
