@@ -39,8 +39,8 @@ jobs:
         with:
           lfs: true
 
-      - name: Checkout Debian Package
-        run: git lfs checkout
+      - name: Pull Debian Package
+        run: /usr/bin/git lfs pull
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
