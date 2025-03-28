@@ -1,5 +1,5 @@
 apt-get -y update
-apt-get -y install git build-essential gcc g++ wget make time
+apt-get -y install git build-essential gcc g++ wget make time x11-apps
 
 cd opt
 wget https://www.klayout.org/downloads/Ubuntu-22/klayout_0.29.12-1_amd64.deb -O klayout.deb
