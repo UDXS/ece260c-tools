@@ -6,8 +6,6 @@ name: Docker I Essential
 # documentation.
 
 on:
-  schedule:
-    - cron: '27 21 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
