@@ -1,11 +1,14 @@
 #!/bin/bash
 
 if [ ! -f "/opt/installed" ]; then
+  chmod 555 $(which restore_or)
+  chmod 555 $(which install_orfs)
 
   echo ECE 260C Image II: Source-Editable
   echo Preparing to start for the first time...
+  echo
   
-  echo "1/4 Installing OpenROAD Sources..."
+  echo "1/4 Restoring OpenROAD Sources..."
   restore_or
   
   echo "2/4 Installing OpenROAD Binaries..."
@@ -16,7 +19,7 @@ if [ ! -f "/opt/installed" ]; then
   echo "3/4 Installing OpenROAD-flow-scripts.."
   install_orfs
 
-  echo "4/4 Finalizing Installation..."
+  echo "4/4 Finalizing..."
   touch /opt/installed
   echo "Done."
   echo

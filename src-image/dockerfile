@@ -13,10 +13,8 @@ RUN source /opt/prep_or.sh
 COPY restore_or /bin
 COPY install_orfs /bin
 COPY bashrc /root/.bashrc
-#COPY image_finalize.sh /opt
-#RUN source /opt/image_finalize.sh
 
-#COPY motd.txt /etc/motd
+COPY motd.txt /etc/motd
 
 FROM scratch
 
