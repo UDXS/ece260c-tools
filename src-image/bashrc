@@ -23,4 +23,7 @@ if [ ! -f "/opt/installed" ]; then
 
 fi
 
+export PATH="/opt/oss-cad-suite/bin":$PATH
+export YOSYS_EXE=/opt/oss-cad-suite/bin/yosys
+
 cat /etc/motd

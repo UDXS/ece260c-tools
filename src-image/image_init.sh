@@ -6,8 +6,8 @@ wget https://www.klayout.org/downloads/Ubuntu-22/klayout_0.29.12-1_amd64.deb -O 
 
 apt-get -y install ./klayout.deb
 
-#wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2025-03-26/oss-cad-suite-linux-x64-20250326.tgz -O oss-cad-suite.tgz
-#tar -xvzf oss-cad-suite.tgz
+wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2025-03-26/oss-cad-suite-linux-x64-20250326.tgz -O oss-cad-suite.tgz
+tar -xvzf oss-cad-suite.tgz
 
 
 # GitHub CLI
