@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ ! -f "/opt/installed" ]; then
+
+  echo ECE 260C Image II: Source-Editable
+  echo Preparing to start for the first time...
+  
+  echo "1/4 Installing OpenROAD Sources..."
+  restore_or
+  
+  echo "2/4 Installing OpenROAD Binaries..."
+  cd /OpenROAD/build
+  make -j install 1> /dev/null
+  cd /
+
+  echo "3/4 Installing OpenROAD-flow-scripts.."
+  install_orfs
+
+  echo "4/4 Finalizing Installation..."
+  touch /opt/installed
+  echo "Done."
+  echo
+
+fi
+
+cat /etc/motd
