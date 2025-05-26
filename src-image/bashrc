@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ ! -f "/opt/installed" ]; then
-  chmod 555 $(which restore_or)
-  chmod 555 $(which install_orfs)
+  chmod 555 /bin/restore_or
+  chmod 555 /bin/install_orfs
 
   echo ECE 260C Image II: Source-Editable
   echo Preparing to start for the first time...
