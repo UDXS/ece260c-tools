@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 AS base
+FROM ubuntu:22.04
 
 SHELL ["/bin/bash", "-c"]
 
@@ -15,10 +15,3 @@ COPY install_orfs /bin
 COPY bashrc /root/.bashrc
 
 COPY motd.txt /etc/motd
-
-FROM scratch
-
-COPY --from=base / /
-SHELL ["/bin/bash", "-c"]
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TZ=America/Los_Angeles
