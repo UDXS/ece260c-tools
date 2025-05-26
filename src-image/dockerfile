@@ -13,7 +13,7 @@ RUN source /opt/prep_or.sh
 COPY restore_or /bin
 COPY install_orfs /bin
 COPY bashrc /root/.bashrc
-RUN chmod 777 /root/bashrc
+RUN chmod 777 /root/.bashrc
 
 COPY motd.txt /etc/motd
 
