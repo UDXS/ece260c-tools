@@ -15,6 +15,5 @@ OpenROAD sources are located in /OpenROAD.
         In case you corrupt them, you may (destructively) restore with restore_or.
 
 OpenROAD-flow-scripts is located in /OpenROAD-flow-scripts 
-A copy of OpenROAD Flow Scripts is provided in this container as a faster alternative to git clone.
-You can copy it in using the orfs_copy or orfs_copy [dest] command.
+        In case you corrupt it, you may (destructively) restore with install_orfs.
 
