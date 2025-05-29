@@ -17,10 +17,10 @@ RUN chmod 777 /root/.bashrc
 
 COPY motd.txt /etc/motd
 
-FROM scratch
+#FROM scratch
 
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TZ=America/Los_Angeles
-COPY --from=base / /
-CMD ["/bin/bash"]
-SHELL ["/bin/bash", "-c"]
+#RG DEBIAN_FRONTEND=noninteractive
+#ENV TZ=America/Los_Angeles
+#COPY --from=base / /
+#CMD ["/bin/bash"]
+#SHELL ["/bin/bash", "-c"]
