@@ -36,3 +36,5 @@ rm -rf
 
 cd /
 git clone --depth=1 --recursive https://github.com/The-OpenROAD-Project/OpenROAD.git 
+cd OpenROAD
+git reset --hard 519227d1a0926e865af5887465991bc3c456e8aa
