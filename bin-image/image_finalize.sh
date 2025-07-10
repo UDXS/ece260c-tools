@@ -6,4 +6,6 @@ echo "conda activate" >> ~/.bashrc
 
 cd /opt
 git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+git reset --hard ceaa2d101d013da03d3689315a1b5dd5f248833d
+
 chmod +x /bin/orfs_copy
