@@ -19,8 +19,6 @@ RUN chmod 777 /root/.bashrc
 
 COPY motd.txt /etc/motd
 
-RUN apt update && apt install -y tigervnc-standalone-server mwm btop xfce4 xfce4-terminal
-
 RUN apt-get update && \
     apt-get install -y locales && \
     locale-gen en_US.UTF-8 && \
