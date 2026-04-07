@@ -12,5 +12,6 @@ ece 260c Image Unified
 Created by Davit Markarian
 Components Copyright (c) 2026 The Regents of the University of California
 
-The display can be accessed using a VNC viewer at localhost:5905.
-If opened with Docker CLI, you need to forward the port 5905 manually. On VS Code with Dev Containers, this is automatic.
+The GUI can be accessed using a VNC viewer at localhost:5905.
+If opened with Docker CLI, you need to forward the port 5905 manually and you will need to run start_gui in this terminal. 
+On VS Code with Dev Containers, this is automatic - no action is needed.
