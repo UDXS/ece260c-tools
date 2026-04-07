@@ -1,5 +1,5 @@
 apt-get -y update
-apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano python3-pip clangd-19 ngspice lsb-release wget software-properties-common gnupg curl
+apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano python3-pip clangd-19 ngspice lsb-release wget software-properties-common gnupg curl cmake
 pip install pyaml
 
 (type -p wget >/dev/null || (apt update && apt install wget -y)) \
