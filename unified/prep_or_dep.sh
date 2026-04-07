@@ -7,6 +7,5 @@ mkdir build
 cd build
 cmake ..
 make -j install
-
-cd /OpenROAD
-./etc/DependencyInstaller.sh -all
+cd /
+rm -rf /opt/kepler-formal

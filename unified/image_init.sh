@@ -1,5 +1,14 @@
 apt-get -y update
-apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano python3-pip clangd-19 ngspice lsb-release wget software-properties-common gnupg curl cmake
+apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano clangd-19 ngspice lsb-release wget software-properties-common gnupg curl cmake
+
+cd /opt
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash /opt/Miniconda3-latest-Linux-x86_64.sh -b -p /opt/miniconda3
+source /opt/miniconda3/bin/activate
+export CONDA_PLUGINS_AUTO_ACCEPT_TOS=yes
+conda config --set auto_activate_base true
+conda activate base
+conda install python=3.13.12 pip
 pip install pyaml
 
 (type -p wget >/dev/null || (apt update && apt install wget -y)) \
@@ -12,23 +21,18 @@ pip install pyaml
 	&& apt update \
 	&& apt install gh -y
 
+
+
 cd opt
 wget https://www.klayout.org/downloads/Ubuntu-24/klayout_0.30.7-1_amd64.deb -O klayout.deb
-
 apt-get -y install ./klayout.deb
+rm klayout.deb
 
 wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-03-26/oss-cad-suite-linux-x64-20260326.tgz -O oss-cad-suite.tgz
 tar -xzf oss-cad-suite.tgz
 rm oss-cad-suite.tgz
 
-cd /
-git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
-cd OpenROAD-flow-scripts
-git reset --hard --recurse-submodules 44e0991fc6ca515cc41f10088110c860ae7235db
-
-cd /
-git clone https://github.com/The-OpenROAD-Project/OpenROAD.git 
-cd OpenROAD
-git submodule update --init --recursive
-git reset --hard --recurse-submodules 52ff2a5ea5814dc671c1cf7c4b950f840b6a4e88 
-
+#cd /
+#git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+#cd OpenROAD-flow-scripts
+#git reset --hard --recurse-submodules 44e0991fc6ca515cc41f10088110c860ae7235db
