@@ -6,13 +6,11 @@
                                            
                                   
 
-ece 260c Image III
+ece 260c Image Unified
         Includes OpenROAD, Yosys, KLayout, Git, GitHub CLI. GUI Supported.
 
 Created by Davit Markarian
-Components Copyright (c) 2025 The Regents of the University of California
+Components Copyright (c) 2026 The Regents of the University of California
 
-OpenROAD sources are located in /OpenROAD. 
-
-OpenROAD-flow-scripts is located in /OpenROAD-flow-scripts
-
+The display can be accessed using a VNC viewer at localhost:5905.
+If opened with Docker CLI, you need to forward the port 5905 manually. On VS Code with Dev Containers, this is automatic.
