@@ -12,7 +12,9 @@
         "vscode": {
             "extensions": [
                 "llvm-vs-code-extensions.vscode-clangd",
-                "chipsalliance.verible"
+                "chipsalliance.verible",
+                "ms-python.python",
+                "rashwell.tcl"
             ]
         }
     }
