@@ -6,6 +6,7 @@ conda activate base
 cd /opt
 git clone --recurse-submodules https://github.com/keplertech/kepler-formal.git
 cd kepler-formal
+git reset --hard -recurse-submodules 5a79520e2634af9c4ee09933145d07b8cc755a27
 mkdir build
 cd build
 cmake ..
