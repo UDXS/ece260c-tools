@@ -1,3 +1,6 @@
+source /opt/miniconda3/bin/activate
+conda activate base
+
 cd /
 git clone https://github.com/The-OpenROAD-Project/OpenROAD.git 
 cd OpenROAD
