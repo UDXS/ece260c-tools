@@ -4,5 +4,6 @@
 export PATH="/opt/oss-cad-suite/bin":$PATH
 export YOSYS_EXE=/opt/oss-cad-suite/bin/yosys
 export OPENROAD_EXE=/OpenROAD/build/bin/openroad
+export KEPLER_FORMAL_EXE=/usr/local/bin/kepler-formal
 
 cat /etc/motd
