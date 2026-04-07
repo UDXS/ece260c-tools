@@ -5,5 +5,14 @@
         "DISPLAY": ":5"
     },
     "postStartCommand": "/usr/bin/gui_start && bash -l",
-    "forwardPorts": [5905]
+    "forwardPorts": [
+        5905
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd"
+            ]
+        }
+    }
 }
