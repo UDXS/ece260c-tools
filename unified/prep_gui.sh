@@ -1,6 +1,7 @@
 apt update
 apt install -y dbus-x11 shotwell geany tigervnc-standalone-server htop btop xfce4 xfce4-terminal
 
+mkdir /root/Desktop
 cp /usr/local/share/applications/openroad.desktop ~/Desktop
 cp /usr/share/applications/klayout.desktop ~/Desktop
 
