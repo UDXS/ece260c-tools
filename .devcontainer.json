@@ -5,6 +5,7 @@
         "DISPLAY": ":5"
     },
     "postStartCommand": "/usr/bin/gui_start && bash -l",
+    "shutdownAction": "stopContainer",
     "forwardPorts": [
         5905
     ],
