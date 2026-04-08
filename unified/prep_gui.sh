@@ -3,9 +3,9 @@ apt-get install -y dbus-x11 shotwell geany tigervnc-standalone-server htop btop 
 
 mkdir /root/Desktop
 cp /usr/local/share/applications/openroad.desktop ~/Desktop
-chmod +x ~/openroad.desktop
+chmod +x ~/Desktop/openroad.desktop
 cp /usr/share/applications/klayout.desktop ~/Desktop
-chmod +x ~/klayout.desktop
+chmod +x ~/Desktop/klayout.desktop
 
 echo "vncserver -localhost -useold -SecurityTypes None -geometry 1920x1200 :5 -- xfce4-session && export DISPLAY=:5" > /usr/bin/gui_start
 chmod +x /usr/bin/gui_start
