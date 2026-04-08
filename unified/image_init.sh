@@ -32,6 +32,10 @@ wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-03-26
 tar -xzf oss-cad-suite.tgz
 rm oss-cad-suite.tgz
 
+# Yosys' prepacked xdot is broken - requires newer(?) glibc
+rm oss-cad-suite/bin/xdot
+
+
 #cd /
 #git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
 #cd OpenROAD-flow-scripts

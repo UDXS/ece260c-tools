@@ -12,8 +12,6 @@ wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2025-03-26
 tar -xvzf oss-cad-suite.tgz
 rm oss-cad-suite.tgz
 
-# Yosys' prepacked xdot is broken - requires newer(?) glibc
-rm oss-cad-suite/bin/xdot
 
 # GitHub CLI
 
