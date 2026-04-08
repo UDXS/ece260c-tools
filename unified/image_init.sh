@@ -1,5 +1,5 @@
 apt-get -y update
-apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano clangd-19 ngspice lsb-release wget software-properties-common gnupg curl cmake libjpeg-dev zlib1g-dev
+apt-get -y install git build-essential gcc g++ wget make time x11-apps vim nano clangd-19 ngspice lsb-release wget software-properties-common gnupg curl cmake libjpeg-dev zlib1g-dev libcairo2-dev libgirepository-2.0-dev
 
 cd /opt
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -9,7 +9,7 @@ export CONDA_PLUGINS_AUTO_ACCEPT_TOS=yes
 conda config --set auto_activate_base true
 conda activate base
 conda install python=3.13.12 pip
-pip install pyaml matplotlib
+pip install pyaml matplotlib xdot
 
 (type -p wget >/dev/null || (apt update && apt install wget -y)) \
 	&& mkdir -p -m 755 /etc/apt/keyrings \
