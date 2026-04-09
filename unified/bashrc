@@ -3,7 +3,7 @@
 
 export PATH="/opt/oss-cad-suite/bin":$PATH
 export YOSYS_EXE=/opt/oss-cad-suite/bin/yosys
-export OPENROAD_EXE=/OpenROAD/build/bin/openroad
+export OPENROAD_EXE=/usr/local/bin/openroad
 export KEPLER_FORMAL_EXE=/usr/local/bin/kepler-formal
 export CONDA_PLUGINS_AUTO_ACCEPT_TOS=yes
 
